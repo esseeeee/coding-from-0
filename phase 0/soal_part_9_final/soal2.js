@@ -33,22 +33,7 @@ function naikAngkot(arrPenumpang) {
     });
   }
   return hasil
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 }
 
 //TEST CASE
