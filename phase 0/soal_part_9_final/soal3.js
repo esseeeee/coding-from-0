@@ -1,16 +1,23 @@
 function highestScore (students) {
   // Code disini
-  let nilai =[];
+  let nilai ={};
 
   for (let i =0;i < students.length;i++) {
     let murid = students[i];
-    if (!(murid.class in nilai)){
-      nilai[murid.class] = {
-        name: murid.name,
-        score: murid.score
-      }
-      // console.log (murid.class , murid.name, murid.score)
+    if (murid.class) {
+        if (!nilai[murid.class]) {
+            nilai[murid.class] = {
+                name : murid.name,
+                score : murid.score
+            };
+        }else if (murid.score > nilai[murid.class].score) {
+            nilai[murid.class] = {
+                name : murid.name,
+                score : murid.score
+            };
+        }
     }
+      // console.log (murid.class , murid.name, murid.score)
   }
   return nilai
 }
@@ -29,7 +36,7 @@ console.log(highestScore([
   },
   {
     name: 'Sergei',
-    score: 74,
+    score: 100,
     class: 'foxes'
   },
   {
