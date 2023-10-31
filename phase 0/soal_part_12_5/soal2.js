@@ -3,7 +3,7 @@
 Diberikan sebuah function cariPelaku(kalimat) yang menerima satu parameter berupa string. Function akan me-return jumlah berapa kali ditemukan kata "abc" secara berturut-turut di dalam kalimat tersebut. Gunakan regex untuk melatih kemampuan regex.
 */
 function cariPelaku(str) {
-  // Menggunakan regex dengan metode match untuk mencari semua kemunculan "abc"
+  
   const matches = str.match(/abc/g);
   
   if (!matches) {
