@@ -1,6 +1,5 @@
 
 function hapusSimbol(str) {
-  // Menggunakan regex untuk menghapus karakter selain huruf dan angka
   return str.replace(/[^a-zA-Z0-9]/g, '');
 }
 
